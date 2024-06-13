@@ -1,8 +1,8 @@
 import useBlogPosts from "./Hook";
-import { useNavigate } from "react-router-dom";
+
 function HomePage() {
-  const { posts, isLoading, isError } = useBlogPosts();
-  const navigate = useNavigate();
+  const { posts, isLoading, isError, navigate } = useBlogPosts();
+
   return (
     <div>
       <div className="app-wrapper">
